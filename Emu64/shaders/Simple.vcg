@@ -1,0 +1,24 @@
+
+/*
+void main( float4 in a_Position  : POSITION,
+		   float4 out v_Position : POSITION,
+		   uniform float4x4 WorldViewProj
+		   )
+{
+	v_Position = mul( a_Position, WorldViewProj );
+}
+*/
+
+uniform float4x4 WorldViewProj;
+
+void main( float4 in a_Position  : POSITION,
+           float2 in a_TexCoord  : TEXCOORD0,
+           float4 in a_Color     : COLOR,
+           float4 out v_Position : POSITION,
+           float2 out v_TexCoord : TEXCOORD0,
+           float4 out v_Color    : COLOR0)
+{
+    v_Position = mul( a_Position, WorldViewProj );
+    v_TexCoord = a_TexCoord;
+    v_Color = a_Color;
+}

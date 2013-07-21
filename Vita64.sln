@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vita64Lib", "Emu64Lib\Vita64Lib.csproj", "{F321073A-E720-467F-9A02-A5D8C352B6A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vita64", "Emu64\Vita64.csproj", "{89DF5F49-DFD8-4ADF-A10D-53275B5CA1FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89DF5F49-DFD8-4ADF-A10D-53275B5CA1FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89DF5F49-DFD8-4ADF-A10D-53275B5CA1FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89DF5F49-DFD8-4ADF-A10D-53275B5CA1FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89DF5F49-DFD8-4ADF-A10D-53275B5CA1FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F321073A-E720-467F-9A02-A5D8C352B6A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F321073A-E720-467F-9A02-A5D8C352B6A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F321073A-E720-467F-9A02-A5D8C352B6A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F321073A-E720-467F-9A02-A5D8C352B6A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Emu64\Vita64.csproj
+	EndGlobalSection
+EndGlobal

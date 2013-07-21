@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F321073A-E720-467F-9A02-A5D8C352B6A7}</ProjectGuid>
+    <ProjectTypeGuids>{69878862-DA7D-4DC6-B0A1-50D8FAB4242F};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Vita64</RootNamespace>
+    <AssemblyName>Vita64</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Sce.PlayStation.Core" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Sce\Sce.Psm.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Core\" />
+    <Folder Include="Memory\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\C64.cs" />
+    <Compile Include="Core\C64Display.cs" />
+    <Compile Include="Core\CharFunctions.cs" />
+    <Compile Include="Core\Color.cs" />
+    <Compile Include="Core\CPUCommon.cs" />
+    <Compile Include="Core\D64Drive.cs" />
+    <Compile Include="Core\DigitalRenderer.cs" />
+    <Compile Include="Core\DigitalRenderer.Data.cs" />
+    <Compile Include="Core\Drive.cs" />
+    <Compile Include="Core\FixPoint.cs" />
+    <Compile Include="Core\Frodo.cs" />
+    <Compile Include="Core\FSDrive.cs" />
+    <Compile Include="Core\HiResTimer.cs" />
+    <Compile Include="Core\IEC.cs" />
+    <Compile Include="Core\Job1541.cs" />
+    <Compile Include="Core\Job1541State.cs" />
+    <Compile Include="Core\MOS6502.EmulateCycle.cs" />
+    <Compile Include="Core\MOS6502State.cs" />
+    <Compile Include="Core\MOS6502_1541.cs" />
+    <Compile Include="Core\MOS6510.cs" />
+    <Compile Include="Core\MOS6510.EmulateCycle.cs" />
+    <Compile Include="Core\MOS6510State.cs" />
+    <Compile Include="Core\MOS6526.cs" />
+    <Compile Include="Core\MOS6526.EmulateCycle.cs" />
+    <Compile Include="Core\MOS6526State.cs" />
+    <Compile Include="Core\MOS6526_1.cs" />
+    <Compile Include="Core\MOS6526_2.cs" />
+    <Compile Include="Core\MOS6569.cs" />
+    <Compile Include="Core\MOS6569.Data.cs" />
+    <Compile Include="Core\MOS6569.EmulateCycle.cs" />
+    <Compile Include="Core\MOS6569State.cs" />
+    <Compile Include="Core\MOS6581.cs" />
+    <Compile Include="Core\MOS6581State.cs" />
+    <Compile Include="Core\Prefs.cs" />
+    <Compile Include="Core\REU.cs" />
+    <Compile Include="Core\SIDRenderer.cs" />
+    <Compile Include="Core\T64Drive.cs" />
+    <Compile Include="Memory\BasicRom.cs" />
+    <Compile Include="Memory\CharacterRom.cs" />
+    <Compile Include="Memory\ColorRam.cs" />
+    <Compile Include="Memory\Drive1541Ram.cs" />
+    <Compile Include="Memory\Drive1541Rom.cs" />
+    <Compile Include="Memory\KernalRom.cs" />
+    <Compile Include="Memory\MemoryBase.cs" />
+    <Compile Include="Memory\RamBase.cs" />
+    <Compile Include="Memory\RamBytePointer.cs" />
+    <Compile Include="Memory\RomBase.cs" />
+    <Compile Include="Memory\SystemRam.cs" />
+    <Compile Include="Utils\ArrayExtensions.cs" />
+    <Compile Include="Utils\StringTable.cs" />
+    <Compile Include="Emulator.cs" />
+    <Compile Include="EmulatorApplication.cs" />
+    <Compile Include="EmulatorIOAdapter.cs" />
+  </ItemGroup>
+</Project>
